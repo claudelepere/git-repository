@@ -35,7 +35,9 @@ import ictjob.utils.lucene.AnalyzerUtils;
  */
 
 public class SearchQueryToBooleanQueryConverter
-{
+{ 
+  private static final String featureJavaOne = "mainJavaOne";
+  private static final String featureJavaTwo = "mainJavaTwo";
   private static final Logger LOGGER  = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
   private static final String LINESEP = System.lineSeparator();
 
@@ -322,6 +324,8 @@ public class SearchQueryToBooleanQueryConverter
     List<Pair<String, Integer>> ret      = new ArrayList<>();
     /* MyEnglishAnalyzer without synonym filter */
     Analyzer                    analyzer = AnalyzerUtils.INSTANCE.getLanguageToMyAnalyzer().get("-" + languageId);
+    String featureJavaThree = "mainJavaThree";
+    String featureJavaFour = "mainJavaFour";
     try (TokenStream tokenStream = analyzer.tokenStream("searchQueryText", searchQueryText)) {
       CharTermAttribute          charTermAttribute          = tokenStream.addAttribute(CharTermAttribute.class);
       PositionIncrementAttribute positionIncrementAttribute = tokenStream.addAttribute(PositionIncrementAttribute.class);
