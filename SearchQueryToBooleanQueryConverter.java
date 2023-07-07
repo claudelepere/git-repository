@@ -324,8 +324,9 @@ public class SearchQueryToBooleanQueryConverter
     List<Pair<String, Integer>> ret      = new ArrayList<>();
     /* MyEnglishAnalyzer without synonym filter */
     Analyzer                    analyzer = AnalyzerUtils.INSTANCE.getLanguageToMyAnalyzer().get("-" + languageId);
-    String featureJavaThree = "mainJavaThree";
-    String featureJavaFour = "mainJavaFour";
+    String featureJavaThree = "featureJavaThree";
+    String featureJavaFour = "featureJavaFour";
+
     try (TokenStream tokenStream = analyzer.tokenStream("searchQueryText", searchQueryText)) {
       CharTermAttribute          charTermAttribute          = tokenStream.addAttribute(CharTermAttribute.class);
       PositionIncrementAttribute positionIncrementAttribute = tokenStream.addAttribute(PositionIncrementAttribute.class);
