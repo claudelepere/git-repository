@@ -1,3 +1,6 @@
 in feature3: 6.txt
+aaa
 bbb
+ccc
 ddd
+eee
