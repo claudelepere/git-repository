@@ -1,6 +1,0 @@
-in main:
-two
-four
-six
-eight
-ten
