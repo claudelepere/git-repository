@@ -74,6 +74,8 @@ public class SearchQueryToBooleanQueryConverter
   }
 
   void walkTreeToBuildBooleanQuery(String indexLanguageId, SearchQuery searchQueryParent, BooleanQuery bQParent) {
+      // comment MainOne
+      // comment MainTwo
     /* The only particular case: the searchQuery does start with a SearchQueryOperator,
      * not with a SearchQueryAggregator;
      * design decision: the MUST clause is added.
@@ -216,6 +218,8 @@ public class SearchQueryToBooleanQueryConverter
               if (searchFieldRANGE2ToBoostList.get(searchFieldName) == null) {
                 searchFieldRANGE2ToBoostList.put(searchFieldName, new ArrayList<>());
               }
+              // comment MainThree
+              // comment MainFour
               searchFieldRANGE2ToBoostList.get(searchFieldName).add(queryBoost);
               break;
             case RANGE3:
