@@ -1,6 +1,11 @@
-in main: 6.txt
+in feature3: 6.txt
+one
 two
+three
 four
+five
 six
+seven
 eight
+nine
 ten
