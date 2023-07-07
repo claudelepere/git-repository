@@ -1,6 +1,3 @@
 in feature3: 6.txt
-two
-four
-six
-eight
-ten
+bbb
+ddd
